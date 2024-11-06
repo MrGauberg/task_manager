@@ -22,21 +22,23 @@
    cd task_manager
    ```
 
-2. **Создайте и активируйте виртуальное окружение:**
+2. **Перейдите в папку с фронтенд-кодом:**
+   ```bash
+   cd backend 
+   ```
+
+3. **Создайте и активируйте виртуальное окружение:**
    ```bash
    python -m venv venv
    source venv/bin/activate  # Linux/macOS
    venv\Scripts\activate     # Windows
    ```
 
-3. **Установите зависимости для Django:**
+4. **Установите зависимости для Django:**
    ```bash
    pip install -r requirements.txt
    ```
-4. **Перейдите в папку с фронтенд-кодом:**
-   ```bash
-   cd backend 
-   ```
+
 
 5. **Примените миграции для создания таблиц базы данных:**
    ```bash
