@@ -1,0 +1,105 @@
+.taskTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.taskTable th,
+.taskTable td {
+    padding: 18px 10px;
+    width: 158px;
+    border: 1px solid #eee;
+    font-size: 16px;
+    color: #333;
+    width: 5%;
+    text-align: left;
+}
+
+.taskTable th {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aeaec1;
+    border: None;
+}
+
+.taskTable td {
+    font-weight: 700;
+    font-size: 16px;
+    color: #070830;
+}
+
+.taskTable td:nth-child(4),
+.taskTable th:nth-child(5),
+.taskTable th:nth-child(6),
+.taskTable th:nth-child(7),
+.taskTable td:nth-child(5),
+.taskTable td:nth-child(6),
+.taskTable td:nth-child(7) {
+    text-align: center;
+}
+
+
+
+.taskTable th:nth-child(1),
+.taskTable td:nth-child(1) {
+    width: 25%;
+}
+
+.taskTable th:nth-child(2),
+.taskTable td:nth-child(2) {
+    width: 39%;
+}
+
+.taskTable th:nth-child(3),
+.taskTable td:nth-child(3) {
+    width: 10%;
+}
+
+.taskTable th:nth-child(4),
+.taskTable td:nth-child(4) {
+    width: 5%;
+}
+
+
+.taskTable th:nth-child(5),
+.taskTable td:nth-child(5) {
+    width: 5%;
+}
+
+
+.taskTable th:nth-child(6),
+.taskTable td:nth-child(6) {
+    width: 5%;
+}
+
+
+.status {
+    display: inline-block;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.actionBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 0 5px;
+}
+
+
+.sortIcon {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+
+.asc {
+    transform: rotate(180deg); 
+}
+
+.desc {
+    transform: rotate(0deg);
+}
+

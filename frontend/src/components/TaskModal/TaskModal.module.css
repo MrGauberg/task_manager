@@ -1,0 +1,99 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 20px;
+}
+
+.modal {
+    background: white;
+    border-radius: 8px;
+    width: 600px;
+    height: 584px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.closeButton {
+    position: absolute;
+    right: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modalTitle {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.input,
+.textarea {
+    width: 519px;
+    padding: 15px;
+    border: 1px solid #aeaec1;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.textarea {
+    height: 213px;
+    resize: none;
+    margin-bottom: 40px;
+}
+
+.input {
+    height: 70px;
+    margin-bottom: 12px;
+
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    font-family: "Nunito Sans", sans-serif;
+    color: #aaa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.submitButton {
+    padding: 10px;
+    background: #070830;
+    color: white;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Nunito Sans", sans-serif;
+    border-radius: 8px;
+    padding: 8px 20px;
+    width: 100%;
+    max-width: 519px;
+    height: 70px;
+}
+
+.submitButton:hover {
+    background-color: #000033;
+}
