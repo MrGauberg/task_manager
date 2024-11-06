@@ -181,8 +181,6 @@ venv
 /.idea/*
 
 **.env
-.gitlab-ci.yml
-docker-compose.yml
 frontend/.env
 
 # dependencies

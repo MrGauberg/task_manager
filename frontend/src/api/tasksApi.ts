@@ -49,10 +49,10 @@ export const createTask = async (taskData: { title: string; description: string 
 
 // Обновление задачи
 export const updateTask = async (taskId: string, updatedData: { id?: string, status?: string, title?: string, description?: string }) => {
-    return await makeAuthorizedRequest(`${BASE_URL}/api/tasks/${taskId}/`, 'PATCH', updatedData);
+    return await makeAuthorizedRequest(`${BASE_URL}api/tasks/${taskId}/`, 'PATCH', updatedData);
 };
 
 // Удаление задачи
 export const deleteTask = async (taskId: string) => {
-    return await makeAuthorizedRequest(`${BASE_URL}/api/tasks/${taskId}/`, 'DELETE');
+    return await makeAuthorizedRequest(`${BASE_URL}api/tasks/${taskId}/`, 'DELETE');
 };
