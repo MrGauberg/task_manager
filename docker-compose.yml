@@ -1,0 +1,27 @@
+volumes:
+  static:
+  media:
+
+services:
+  backend:
+    build: ./backend/
+    env_file: /backend/.env
+    volumes:
+      - media:/app/media/
+      - static:/app/staticfiles
+    ports:
+      - "9000:9000"
+  frontend:
+    env_file: /frontend/.env
+    build: ./frontend/
+    command: cp -r /app/build/. /static/
+    volumes:
+      - static:/static
+  gateway:
+    image: task_manager
+    build: ./nginx/
+    ports:
+    - "9001:80"
+    volumes:
+      - static:/staticfiles/
+      - media:/media/
